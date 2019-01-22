@@ -5,10 +5,31 @@
 body {
     margin: 0;
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    background-color: #C1B5AD;
+    background-color: #b1c1ad;
+    display: flex;
 }
 
 #map {
     height: 100vh;
-    width: 100vw;
+    flex: 3;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navlink {
+    flex: 33%;
+    /* flex-grow: 1; */
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#sidebar {
+    flex: 2;
+    background-color: #6e756c;
 }
